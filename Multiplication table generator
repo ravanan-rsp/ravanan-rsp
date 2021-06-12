@@ -1,0 +1,17 @@
+using namespace std;
+
+void main()
+{
+    int n;
+    int i;
+
+    cout << "Enter a positive integer: ";
+    cin >> n;
+#include <iostream>
+
+    for ( i = 1; i <= 12; ++i) {
+        cout << n << " * " << i << " = " << n * i << endl;
+    }
+
+   
+}

@@ -1,0 +1,41 @@
+#define FLAME 3
+#define ALARM 8  
+
+
+void setup() {
+  Serial.begin(9600);
+  Serial.println("********");
+  Serial.println("Welcome to FutureTech");
+  Serial.println("           By Ramshri");
+  Serial.println("Project: Flame Detector");
+  Serial.println("********\n\n");
+  
+  pinMode(FLAME, INPUT_PULLUP);
+  pinMode(ALARM, OUTPUT);
+
+
+  digitalWrite(FLAME, LOW);
+
+}
+
+void loop() 
+{
+   
+
+  int f = digitalRead(FLAME);
+  
+  if( f == HIGH)
+  {
+    digitalWrite(ALARM,HIGH);
+    Serial.println("**Alert!!  We've got the fire...**");
+  }
+  else
+  {
+    digitalWrite(ALARM,LOW); 
+    Serial.println("No Fire");
+  }
+
+  delay(1000);
+  digitalWrite(FLAME, LOW);
+
+}

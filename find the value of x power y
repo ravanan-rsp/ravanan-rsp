@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+void main() {
+
+	int x, y, i;
+	int q = 1;
+	printf(" enter your number=");
+	scanf_s("%d", &x);
+	printf(" enter your exponent=");
+	scanf_s("%d", &y);
+	for (int i = 1; i <= y; i++) {
+		q *= x;
+	}
+	printf("%d", q);
+}             

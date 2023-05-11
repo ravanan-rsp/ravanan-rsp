@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include<math.h>
+
+	void main() {
+
+		int a, b, c, d;
+
+		scanf_s("%d",&a);
+
+		b = sqrt(a);
+		
+		printf("%d", b);
+		printf("*");
+		printf("%d", b);
+
+
+	
+
+	}

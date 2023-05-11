@@ -3,11 +3,11 @@
 
 void main() {
 
-	int a,i;
+	float a,i;
 	
-	scanf_s("%d", &a);
+	scanf_s("%f", &a);
 
 	i = sqrt(a);
-	printf("%d", i);
+	printf("%f", i);
 		
 }
